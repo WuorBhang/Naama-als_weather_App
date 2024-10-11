@@ -1,55 +1,111 @@
-<!--<!DOCTYPE html>-->
-<!--Coding By Wuor Bhang - https://wuor.github.io/-->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Weather Forecast App</title>
-
+    <title>Weather App </title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter city name" spellcheck="false">
-            <button><img src="./images/search.png" alt=""></button>
+    <section class="Card">
+        <div class="Search">
+            <input type="text" placeholder="Enter the country" spellcheck="false" required>
+            <button ><img src="./images/search.png" alt="loading..."></button>
         </div>
-
         <div class="error">
-            <p>invalid City Name !</p>
-        </div>
+            <p>Invalid city name</p>
 
-        <div class="weather">
-            <img src="images/rain.png" class="weather-icon">
-            <h1 class="temp">22°c</h1>
-            <h2 class="city">Nairobi</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png">
+        </div>
+        <div class="Weather">
+            <img src="./images/rain.png" alt="loading..." class="weather-icon" srcset="">
+            <h1 class="temp">22</h1>
+                <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="./images/humidity.png" alt="loading..." srcset="">
                     <div>
-                        <p class="humidity">65%</p>
+                        <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
-                </div>
-                <div class="col">
-                    <img src="images/wind.png">
-                    <div>
-                        <p class="Wind">21 km/hr</p>
-                        <p>Wind</p>
                     </div>
+                    <div class="col">
+                        <img src="./images/wind.png" alt="loading..." srcset="">
+                    <div>
+                        <p class="wind">15 </p>
+                        <p>Wind speed</p>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="weatherDays">
+                    <div class="daysNumber">
+                        <ul>
+                            <li class="firstday">
+                                Bhang
+                            </li>
+                           </ul>
+                           <div>
+                            <p class="tem1"></p>
+        
+                           </div>
+                    </div>
+
+                    <div class="daysNumber">
+                        <ul>
+                            <li class="secondday">
+                                Bhang
+                            </li>
+                           </ul>
+                           <div>
+                            <p class="tem2"></p>
+        
+                           </div>
+                    </div>
+                    <div class="daysNumber">
+                        <ul>
+                            <li class="thirdday">
+                                Bhang
+                            </li>
+                           </ul>
+                           <div>
+                            <p class="tem3"></p>
+        
+                           </div>
+                    </div>
+                    <div class="daysNumber">
+                        <ul>
+                            <li class="fourthday">
+                                Bhang
+                            </li>
+                           </ul>
+                           <div>
+                            <p class="tem4"></p>
+        
+                           </div>
+                    </div>
+                    <div class="daysNumber">
+                        <ul>
+                            <li class="fifthday">
+                                Bhang 
+                            </li>
+                           </ul>
+                           <div>
+                            <p class="tem5"></p>
+        
+                           </div>
+                    </div>
+                    
+                
+                   
+                   
                 </div>
 
-            </div>
         </div>
 
-    </div>
+    </section>
+    <script src="./Javascript/script.js"></script>
+    
 
-    <script src="script.js"></script>
-
-
+    
 </body>
-
 </html>

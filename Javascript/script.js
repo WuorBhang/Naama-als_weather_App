@@ -1,6 +1,8 @@
-const apiKey = "9263087518e3e75d0c431e7480641fab";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
+//API from  OpenWheither
+const apiKey ="9263087518e3e75d0c431e7480641fab";
+const apiUrl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiUrl2="https://api.openweathermap.org/data/2.5/forecast?units=metric&q=";
 
 //Appealing of html elements
 const searchBox=document.querySelector(".Search input");
@@ -33,27 +35,27 @@ async function CheckWeather(city){
   
 
     if(data.weather[0].main==="Clouds"){
-        weatherImg.src="style/images/clouds.png";
+        weatherImg.src="./images/clouds.png";
      
 
         
 
     }
     else if(data.weather[0].main==='Clear' || data.weather[0].main==='Haze'){
-        weatherImg.src='./style/images/clear.png'
+        weatherImg.src='./images/clear.png'
         
     }
     else if(data.weather[0].main==='Rain'){
-        weatherImg.src="./style/images/rain.png";
+        weatherImg.src="./images/rain.png";
         
         
     }
     else if(data.weather[0].main==='Drizzle'){
-        weatherImg.src='./style/images/drizzle.png'
+        weatherImg.src='./images/drizzle.png'
         
     }
     else if(data.weather[0].main==='Mist'){
-        weatherImg.src='./style/images/mist.png'
+        weatherImg.src='./images/mist.png'
         
     }
     document.querySelector(".Weather").style.display="block";
@@ -122,6 +124,3 @@ async function CheckWeather5day(daysWeather){
 
 
 
-searchBtn.addEventListener("click", () => {
-    checkWeather(searchBox.value);
-})
